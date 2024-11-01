@@ -11,7 +11,7 @@ namespace CS_form
 {
     class TestButton : Button
     {
-        public TestButton(int x,int y,int widht,int height)
+        public TestButton(int id,int x,int y,int widht,int height)
         {
             //ClickイベントにOnClick関数を問登録
             //botannwo 
@@ -19,16 +19,16 @@ namespace CS_form
             Click += OnClick;
 
             //ボタン内に文字を表示
-            Text = "ボタン";
+            Text = id.ToString();
 
-            Location = new Point(x,y);         //ボタンの位置
-            Size = new Size(widht,height);     //ボタンのサイズ
+            Location = new Point(x,y);  //ボタンの位置
+            Size = new Size(widht,height);    //ボタンのサイズ
 
         }
 
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show("あいうえお");
+            MessageBox.Show(Text);
         }
         
 
