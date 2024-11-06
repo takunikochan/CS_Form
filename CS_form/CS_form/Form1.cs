@@ -52,6 +52,10 @@ namespace CS_form
             Controls.Add(testButton10);
             }
 
+            TestLabel testLabel =
+                new TestLabel("らべるです",10,300,100,500);
+            Controls.Add(testLabel);
+
         }
     }
 }

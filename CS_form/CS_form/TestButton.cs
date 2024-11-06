@@ -19,10 +19,13 @@ namespace CS_form
             Click += OnClick;
 
             //ボタン内に文字を表示
-            Text = id.ToString();
-
-            Location = new Point(x,y);        //ボタンの位置
-            Size = new Size(widht,height);    //ボタンのサイズ
+           Text = id.ToString();
+           
+            //ボタンの生成場所を指定
+            Location = new Point(x,y);        
+            
+            //ボタンのサイズを指定
+            Size = new Size(widht,height);    
 
         }
 
