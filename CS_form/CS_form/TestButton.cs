@@ -11,11 +11,15 @@ namespace CS_form
 {
     class TestButton : Button
     {
-        public TestButton(int id,int x,int y,int widht,int height)
+        Form1 _form1;
+
+        public TestButton(Form1 form1, int id,int x,int y,int widht,int height)
         {
+            _form1 = form1;
+
             //ClickイベントにOnClick関数を問登録
             //botannwo 
-            
+
             Click += OnClick;
 
             //ボタン内に文字を表示
@@ -31,7 +35,7 @@ namespace CS_form
 
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show(Text);
+            _form1.LabelTextUpdade(Text);
         }
         
 

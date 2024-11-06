@@ -23,5 +23,14 @@ namespace CS_form
             Size = new Size(widht, height);
 
         }
+        /// <summary>
+        /// ラベルの文字更新関数
+        /// </summary>
+        /// <param name="str"></param>
+        public void TextUpdade(string str)
+        {
+            Text = str;
+        }
+
     }
 }
