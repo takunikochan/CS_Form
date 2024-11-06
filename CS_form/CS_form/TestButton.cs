@@ -21,7 +21,7 @@ namespace CS_form
             //ボタン内に文字を表示
             Text = id.ToString();
 
-            Location = new Point(x,y);  //ボタンの位置
+            Location = new Point(x,y);        //ボタンの位置
             Size = new Size(widht,height);    //ボタンのサイズ
 
         }
