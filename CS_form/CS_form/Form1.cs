@@ -56,16 +56,12 @@ namespace CS_form
             _testLabel.TextUpdade(str);
         }
 
-        private void TestButton_Click(object sender, EventArgs e)
+             public string ButtonLabelReplacement(string str)
         {
-            // テキストボックスの文字を一時的に保存
-            string temp = 
+              string s = _TextBox.TextReplacement(str);
 
-            // テキストボックスの文字をボタンの文字に変更
-            _TextBox.Text = 
+              return s;
 
-            // ボタンの文字を一時的に保存した文字に変更
-             = temp;
         }
 
 

@@ -29,6 +29,15 @@ namespace CS_form
         /// </summary>
         /// <param name="str"></param>
 
+        public string TextReplacement(string str)
+        {
+            string temp = Text;
+
+            Text = str;
+
+            return temp;
+        }
+
 
 
 

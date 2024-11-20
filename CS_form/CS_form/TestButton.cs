@@ -74,11 +74,17 @@ namespace CS_form
 
             }
         
-
+        //ボタンを押したときにラベルの文字に反映される
         public void OnClick(object sender, EventArgs s)
         {
+            string t = _form1.ButtonLabelReplacement(Text);
+
+            Text = t;
+            
             _form1.LabelTextUpdade(Text);
         }
+
+       
         
 
     }
