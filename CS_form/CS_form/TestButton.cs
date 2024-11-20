@@ -17,52 +17,53 @@ namespace CS_form
         {
             _form1 = form1;
 
-            //ClickイベントにOnClick関数を問登録
+            //ClickイベントにOnClick関数を登録
             //botannwo 
 
             Click += OnClick;
 
-            //ボタン内に文字を表示
-            Text = id.ToString();
+            //      //ボタン内に文字を表示
+            //      Text = id.ToString();
+
             if (id == 0)
             {
-                Text = "あ!";
+                Text = "あ";
             }
             else if (id == 1)
             {
-                Text = "い!";
+                Text = "い";
             }
             else if (id == 2)
             {
-                Text = "う!";
+                Text = "う";
             }
             else if (id == 3)
             {
-                Text = "え!";
+                Text = "え";
             }
             else if (id == 4)
             {
-                Text = "お!";
+                Text = "お";
             }
             else if (id == 5)
             {
-                Text = "か!";
+                Text = "か";
             }
             else if (id == 6)
             {
-                Text = "き!";
+                Text = "き";
             }
             else if (id == 7)
             {
-                Text = "く!";
+                Text = "く";
             }
             else if (id == 8)
             {
-                Text = "け!";
+                Text = "け";
             }
             else if (id == 9)
             {
-                Text = "こ!";
+                Text = "こ";
             }
 
             //ボタンの生成場所を指定

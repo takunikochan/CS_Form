@@ -7,30 +7,65 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CS_form
 {
     public partial class Form1 : Form
     {
         TestLabel _testLabel;
+
+        TestTextBox _TextBox;
+
         public Form1()
         {
-             InitializeComponent();
+            //コンポーネントの初期化 
+            InitializeComponent();
+
+      　   string[] strs =
+      　   {
+      　    "あ",
+      　    "い",
+      　    "う",
+      　    "え",
+      　    "お",
+      　    "か",
+      　    "き",
+      　    "く",
+      　    "け",
+      　    "こ",
+      　   };
             
             for (int i = 0; i < 10; i++) 
             { 
-            TestButton testButton10 = new TestButton(this,i,(i % 5)*100,(i / 5)*100, 100, 100);
-            Controls.Add(testButton10);
+            TestButton testButton = new TestButton(this,i,(i % 5)*100,(i / 5)*100, 100, 100);
+            Controls.Add(testButton);
             }
 
             _testLabel =
                 new TestLabel("らべるです",10,300,100,500);
             Controls.Add(_testLabel);
+
+            _TextBox = new TestTextBox("てきすとぼっくすです", 10,300,500,100);
+
+                Controls.Add(_TextBox);
 　　　　　　
         }
         public void LabelTextUpdade(string str)
         {
             _testLabel.TextUpdade(str);
+        }
+
+        private void TestButton_Click(object sender, EventArgs e)
+        {
+            // テキストボックスの文字を一時的に保存
+            string temp = 
+
+            // テキストボックスの文字をボタンの文字に変更
+            _TextBox.Text = 
+
+            // ボタンの文字を一時的に保存した文字に変更
+             = temp;
         }
 
 
